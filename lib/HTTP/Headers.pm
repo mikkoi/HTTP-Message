@@ -10,7 +10,7 @@ use Carp ();
 
 # The $TRANSLATE_UNDERSCORE variable controls whether '_' can be used
 # as a replacement for '-' in header field names.
-our $TRANSLATE_UNDERSCORE = 1 unless defined $TRANSLATE_UNDERSCORE;
+our $TRANSLATE_UNDERSCORE = 1 unless defined $ENV{TRANSLATE_UNDERSCORE};
 
 # "Good Practice" order of HTTP message headers:
 #    - General-Headers
